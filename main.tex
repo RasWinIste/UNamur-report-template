@@ -1,0 +1,40 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{cite}
+
+% Style for chapter title
+\titleformat{\chapter}[hang]
+  {\normalfont\huge\bfseries}
+  {\thechapter.}{1em}
+  {} 
+
+% Metadata
+\title{
+    \includegraphics[width=0.4\textwidth]{figs/unamur_logo.png}\\[2cm]
+    \Huge Course Name Here\\[0.5cm]
+    \Large \textit{Project Title Here}\\[3cm]
+    \vfill
+    \large Author One, Author Two, and Author Three\\[1cm]
+    Année académique 202x--202x
+}
+\date{}
+
+% Document
+\begin{document}
+
+% Table of contents
+\maketitle
+\tableofcontents
+\clearpage
+
+% Chapters
+\input{introduction}
+
+% Biblio
+\bibliographystyle{plain}
+\bibliography{biblio}
+
+\end{document}
